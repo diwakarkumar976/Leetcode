@@ -1,0 +1,16 @@
+class Solution {
+    public int[] sortedSquares(int[] nums) {
+        int length = nums.length;
+        int []arr =new int[length];
+/*        List<Integer> list = Arrays.asList(nums);
+       List<Integer> list1 = list.stream().map(e->e*e).collect(Collectors.toList());*/
+        int j=0;
+            for(int i=0;i<nums.length;i++){
+                int value = Math.abs(nums[i]);
+                arr[j] = value*value;
+                j++;
+            }
+        Arrays.sort(arr);
+        return arr;
+    }
+}
