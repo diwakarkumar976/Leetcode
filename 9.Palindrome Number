@@ -12,9 +12,8 @@ class Solution {
 
         if(result==temp){
             return true;
-        } else{
-            return false;
         }
+        return false;
         
     }
 }
